@@ -52,7 +52,7 @@
         </exec>
     </target>
 
-    <target name="full-build" depends="prepare,composer,static-analysis,phpunit,phpdox,-check-failure"
+    <target name="full-build" depends="prepare,composer,static-analysis,phpunit,phpdox,check-failure"
             description="Perform static analysis, run tests, and generate project documentation.">
         <echo message="Built"/>
     </target>
@@ -218,7 +218,7 @@
         <echo message="Done"/>
     </target>
 
-    <target name="-check-failure">
+    <target name="check-failure">
         <fail message="PHPUnit did not finish successfully">
             <condition>
                 <not>
