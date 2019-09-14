@@ -65,11 +65,11 @@ class Bar
      */
     public function isCooked($time) 
     { 
-      $cooked = false;
-      if ( $time >= $this->getNumber()) {
-        $cooked = true;
-      }
+        $cooked = false;
+        if ($time >= $this->getNumber()) {
+          $cooked = true;
+        }
 
-      return $cooked;
+        return $cooked;
     }
 }
