@@ -25,7 +25,7 @@ pipeline {
                     }
                     post {
                         always {
-                            #sh 'rsync -av --include="*.xml" --exclude="*build/logs*" build/* build/logs/'
+                            sh 'rsync -av --include="*.xml" --exclude="*build/logs*" build/* build/logs/'
                         }
                     }
                 }
