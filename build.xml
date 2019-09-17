@@ -50,6 +50,7 @@
             <arg value="--prefer-dist"/>
             <arg value="--no-progress"/>
         </exec>
+      </exec>
     </target>
 
     <target name="full-build" depends="prepare,composer,static-analysis,phpunit,phpdox,check-failure"
